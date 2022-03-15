@@ -1,0 +1,66 @@
+DROP TABLE IF EXISTS Sub_contractor
+CASCADE;
+CREATE table Sub_contractor
+(
+    SID serial
+        primary key,
+    S_Lname varchar (20),
+    S_Fname varchar(20),
+    Salary int
+);
+
+
+DROP TABLE IF EXISTS Builder
+CASCADE;
+CREATE TABLE Builder
+(
+    BID serial,
+    B_lname varchar(20),
+    B_fname varchar(20),
+    License varchar(50),
+    PRIMARY KEY (BID)
+);
+
+
+DROP TABLE IF EXISTS Neighborhood
+CASCADE;
+CREATE TABLE Neighborhood
+(
+    NID serial,
+    N_Name varchar(30),
+    City varchar(30),
+    PRIMARY KEY (NID)
+);
+
+
+DROP TABLE IF EXISTS Hire_info
+CASCADE;
+CREATE TABLE Hire_info
+(
+    BID int,
+    SID int,
+    HireDate date,
+    PRIMARY KEY(BID,SID),
+    FOREIGN KEY(SID) 
+        REFERENCES Sub_contractor(SID),
+    FOREIGN KEY(BID) 
+        REFERENCES Builder(BID)
+);
+
+
+DROP TABLE IF EXISTS House
+CASCADE;
+CREATE TABLE House
+(
+    HID serial,
+    H_Name varchar (30),
+    FinishDate date,
+    Price int,
+    BID int,
+    NID int,
+    PRIMARY KEY (HID),
+    FOREIGN KEY(BID) 
+        REFERENCES Builder(BID),
+    FOREIGN KEY(NID) 
+        REFERENCES Neighborhood(NID)
+);
