@@ -14,7 +14,7 @@ VALUES
 
 
 INSERT INTO Builder
-    (B_fname,B_lname,License)
+    (B_Fname,B_Lname,License)
 VALUES
     ('Hu', 'Trujillo', '7363407288'),
     ('Channing', 'Levine', '0117785353'),
