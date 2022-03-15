@@ -15,8 +15,8 @@ CASCADE;
 CREATE TABLE Builder
 (
     BID serial,
-    B_lname varchar(20),
-    B_fname varchar(20),
+    B_Lname varchar(20),
+    B_Fname varchar(20),
     License varchar(50),
     PRIMARY KEY (BID)
 );
