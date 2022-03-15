@@ -16,8 +16,8 @@ CASCADE;
 CREATE TABLE Builder
 (
     BID serial,
-    B_lname varchar(20),
-    B_fname varchar(20),
+    B_Lname varchar(20),
+    B_Fname varchar(20),
     License varchar(50),
     PRIMARY KEY (BID)
 );
@@ -87,7 +87,7 @@ VALUES
 
 
 INSERT INTO Builder
-    (B_fname,B_lname,License)
+    (B_Fname,B_Lname,License)
 VALUES
     ('Hu', 'Trujillo', '7363407288'),
     ('Channing', 'Levine', '0117785353'),
