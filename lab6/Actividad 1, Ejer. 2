@@ -10,8 +10,11 @@ VALUES
     ('Montana', 7613792, 'Ratliff'),
     ('Mariam', 552266, 'William'),
     ('Ralph', 6910483, 'Bailey'),
-    ('Reagan', 401269, 'Kelley');
-
+    ('Vern', 2698889, 'Fuer'),
+    ('Drog', 3941927, 'Hon'),
+    ('Geir', 401269, 'Rofug'),
+    ('Reynolls', 9582911, 'Aritz'),
+    ('Hekiru', 9901269, 'Montil');
 
 INSERT INTO Builder
     (B_Fname,B_Lname,License)
@@ -25,7 +28,11 @@ VALUES
     ('Malcolm', 'Harmon', '1518172550'),
     ('Jarrod', 'Santana', '2511612463'),
     ('Ishmael', 'Gaines', '5334861868'),
-    ('Freya', 'Singleton', '4073276813');
+    ('Bens', 'Dies', '6334861868'),
+    ('Cocker', 'Josp', '3334861868'),
+    ('Lima', 'Guien', '1334861868'),
+    ('Gigum', 'Ascegn', '5124861868'),
+    ('Freya', 'Quevar', '4073276813');
 
 INSERT INTO Neighborhood
     (N_Name,City)
@@ -54,7 +61,11 @@ VALUES
     (7, 7, '2033-07-14'),
     (8, 8, '2042-04-18'),
     (9, 9, '2019-03-21'),
-    (10, 10, '2038-04-24');
+    (10, 10, '2038-04-24'),
+    (11, 11, '2014-01-21'),
+    (12, 12, '2016-07-01'),
+    (13, 13, '2022-10-09'),
+    (14, 14, '2027-02-28');
 
 INSERT INTO House
     (H_Name,Price,FinishDate,BID,NID)
